@@ -4,15 +4,22 @@ class Headers extends React.Component {
   render() {
     let selected = this.props.selected;
     let headers = this.props.panes.map((pane, index) => {
+      let title = pane.title;
+      let klass = '';
+      if (index === selected) {
+        klass = 'active';
+      }
+
       return (
-        <span key={index} onClick={this.props.selectTab.bind(null, index)}>
-          {pane.title}{' '}
+        <span key={index} className={klass}
+          onClick={this.props.selectTab.bind(null, index)}>
+          {title}{' '}
         </span>
       );
     });
 
     return (
-      <div>
+      <div className='tab-header'>
         {headers}
       </div>
     );
@@ -36,13 +43,18 @@ class Tabs extends React.Component {
     return (
       <div>
         <h1>Tabs</h1>
-        <Headers
-          panes={this.props.panes}
-          selected={this.state.selected}
-          selectTab={this.selectTab} />
-        <p>
-          {current.content}
-        </p>
+
+        <div className='tabs'>
+          <Headers
+            panes={this.props.panes}
+            selected={this.state.selected}
+            selectTab={this.selectTab} />
+
+          <div className='content'>
+            <p>{current.content}</p>
+          </div>
+
+        </div>
       </div>
     );
   }

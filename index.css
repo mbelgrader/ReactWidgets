@@ -1,0 +1,47 @@
+/*html, body, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+
+  background: transparent;
+}*/
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
+
+.tab-header > span {
+  width: 80;
+  border-left: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.tab-header span:last-child {
+  border-right: 1px solid black;
+}
+
+.content {
+  margin: 0;
+  height: 150px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabs {
+  width: 240px;
+}
+
+body{
+  display: flex;
+  justify-content: space-around;
+}
