@@ -1,4 +1,4 @@
-/*html, body, p {
+html, body, p {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,7 +9,7 @@
   color: inherit;
 
   background: transparent;
-}*/
+}
 
 /* tabs */
 
@@ -75,6 +75,12 @@
   border: 2px solid black;
   background-image: url(http://www.unitedfurnitureoutlets.co.za/wp-content/uploads/2015/10/clock_category_banner.jpg);
   background-size: cover;
+}
+
+.time {
+  margin-left: 185px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
 /* widgets */

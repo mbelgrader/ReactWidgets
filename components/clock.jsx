@@ -33,12 +33,10 @@ class Clock extends React.Component {
         <h1>Clock</h1>
 
         <div className='clock'>
-          <p>
-            <span>Time:</span>
-            <span>{hours}:{mins}:{secs} PDT</span>
-          </p>
-
-          <p>Date: {this.state.time.toDateString()}</p>
+          <div className='time'>
+            <p>Time: {hours}:{mins}:{secs} PDT</p>
+            <p>Date: {this.state.time.toDateString()}</p>
+          </div>
         </div>
 
       </div>
