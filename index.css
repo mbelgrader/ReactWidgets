@@ -11,37 +11,80 @@
   background: transparent;
 }*/
 
+/* tabs */
+
 .tab-header {
+  /*width: 200px;
+  height: 30px;
+  margin: 0 20px;*/
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid black;
 }
 
-.tab-header > span {
-  width: 80;
-  border-left: 1px solid black;
+.tab-header span {
+  width: 65px;
   padding: 5px;
+  border: 2px solid black;
+  border-bottom: none;
   text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #40acef;
+  cursor: pointer;
 }
 
 .tab-header span:last-child {
-  border-right: 1px solid black;
+  border-right: 2px solid black;
+}
+
+.tab-header > span:hover{
+  background-color: black;
+  color: white;
 }
 
 .content {
   margin: 0;
   height: 150px;
-  border: 1px solid black;
+  color: white;
+  font-weight: bold;
+  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(https://image-gr.s3.envato.com/files/30755452/blue_neon_background_with_globe.jpg);
+  background-size: cover;
+  /*background-position-x: 20%; */
 }
 
 .tabs {
-  width: 240px;
+  width: 200px;
 }
+
+.active {
+  font-weight: bold;
+}
+
+/* clock */
+
+.clock {
+  font-size: 28px;
+  color: white;
+  font-family: Orbitron;
+  width: 550px;
+  height: 94px;
+  border: 2px solid black;
+  background-image: url(http://www.unitedfurnitureoutlets.co.za/wp-content/uploads/2015/10/clock_category_banner.jpg);
+  background-size: cover;
+}
+
+/* widgets */
 
 body{
   display: flex;
   justify-content: space-around;
 }
+
+/*.interactive{
+  display: flex;
+  justify-content: space-around;
+}*/
