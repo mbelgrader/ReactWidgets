@@ -67,20 +67,23 @@ html, body, p {
 /* clock */
 
 .clock {
+  margin: 0 20px 20px 20px;
+  padding: 10px;
   font-size: 28px;
-  color: white;
   font-family: Orbitron;
+  color: white;
   width: 550px;
   height: 94px;
   border: 2px solid black;
-  background-image: url(http://www.unitedfurnitureoutlets.co.za/wp-content/uploads/2015/10/clock_category_banner.jpg);
+  background-image: url(https://hd.unsplash.com/photo-1445109673451-c511bb51bd17);
   background-size: cover;
+  background-position-y: 20%;
 }
 
-.time {
-  margin-left: 185px;
-  margin-top: 20px;
-  font-size: 18px;
+.clock p {
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;;
 }
 
 /* widgets */
